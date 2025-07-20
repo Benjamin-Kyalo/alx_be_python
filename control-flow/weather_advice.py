@@ -11,5 +11,4 @@ elif weather == "rainy":
 elif weather == "cold":
     print("Make sure to wear a warm coat and a scarf.")
 else:
-    # 3. This else catches everything else
     print("Sorry, I don't have recommendations for this weather.")
