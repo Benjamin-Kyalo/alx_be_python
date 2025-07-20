@@ -1,0 +1,182 @@
+[
+    {
+        "label": "number1",
+        "kind": 5,
+        "importPath": "python_introduction.basic_operations",
+        "description": "python_introduction.basic_operations",
+        "peekOfCode": "number1 = 10\nnumber2 = 5\n# Addition\nsum = number1 + number2\nprint(\"Addition of 10 and 5 is\", sum)\n# Subtraction\ndifference = number1 - number2\nprint(\"Subtraction of 10 and 5 is\", difference)\n# Multiplication\nproduct = number1 * number2",
+        "detail": "python_introduction.basic_operations",
+        "documentation": {}
+    },
+    {
+        "label": "number2",
+        "kind": 5,
+        "importPath": "python_introduction.basic_operations",
+        "description": "python_introduction.basic_operations",
+        "peekOfCode": "number2 = 5\n# Addition\nsum = number1 + number2\nprint(\"Addition of 10 and 5 is\", sum)\n# Subtraction\ndifference = number1 - number2\nprint(\"Subtraction of 10 and 5 is\", difference)\n# Multiplication\nproduct = number1 * number2\nprint(\"Multiplication of 10 and 5 is\", product)",
+        "detail": "python_introduction.basic_operations",
+        "documentation": {}
+    },
+    {
+        "label": "sum",
+        "kind": 5,
+        "importPath": "python_introduction.basic_operations",
+        "description": "python_introduction.basic_operations",
+        "peekOfCode": "sum = number1 + number2\nprint(\"Addition of 10 and 5 is\", sum)\n# Subtraction\ndifference = number1 - number2\nprint(\"Subtraction of 10 and 5 is\", difference)\n# Multiplication\nproduct = number1 * number2\nprint(\"Multiplication of 10 and 5 is\", product)",
+        "detail": "python_introduction.basic_operations",
+        "documentation": {}
+    },
+    {
+        "label": "difference",
+        "kind": 5,
+        "importPath": "python_introduction.basic_operations",
+        "description": "python_introduction.basic_operations",
+        "peekOfCode": "difference = number1 - number2\nprint(\"Subtraction of 10 and 5 is\", difference)\n# Multiplication\nproduct = number1 * number2\nprint(\"Multiplication of 10 and 5 is\", product)",
+        "detail": "python_introduction.basic_operations",
+        "documentation": {}
+    },
+    {
+        "label": "product",
+        "kind": 5,
+        "importPath": "python_introduction.basic_operations",
+        "description": "python_introduction.basic_operations",
+        "peekOfCode": "product = number1 * number2\nprint(\"Multiplication of 10 and 5 is\", product)",
+        "detail": "python_introduction.basic_operations",
+        "documentation": {}
+    },
+    {
+        "label": "monthly_expenses",
+        "kind": 5,
+        "importPath": "python_introduction.finance_calculator",
+        "description": "python_introduction.finance_calculator",
+        "peekOfCode": "monthly_expenses = float(input(\"Enter your total monthly expenses: \"))\n# Calculate monthly savings\nmonthly_savings = monthly_income - monthly_expenses\n# Project annual savings with 5% interest\nannual_total      = monthly_savings * 12\nprojected_savings = annual_total * 1.05\n# Output the results\nprint(f\"Your monthly savings are ${monthly_savings:.2f}.\")\nprint(f\"Projected savings after one year, with interest, is: ${projected_savings:.2f}.\")\n# Note: The interest rate is assumed to be 5% for this calculation.",
+        "detail": "python_introduction.finance_calculator",
+        "documentation": {}
+    },
+    {
+        "label": "monthly_savings",
+        "kind": 5,
+        "importPath": "python_introduction.finance_calculator",
+        "description": "python_introduction.finance_calculator",
+        "peekOfCode": "monthly_savings = monthly_income - monthly_expenses\n# Project annual savings with 5% interest\nannual_total      = monthly_savings * 12\nprojected_savings = annual_total * 1.05\n# Output the results\nprint(f\"Your monthly savings are ${monthly_savings:.2f}.\")\nprint(f\"Projected savings after one year, with interest, is: ${projected_savings:.2f}.\")\n# Note: The interest rate is assumed to be 5% for this calculation.",
+        "detail": "python_introduction.finance_calculator",
+        "documentation": {}
+    },
+    {
+        "label": "projected_savings",
+        "kind": 5,
+        "importPath": "python_introduction.finance_calculator",
+        "description": "python_introduction.finance_calculator",
+        "peekOfCode": "projected_savings = annual_total * 1.05\n# Output the results\nprint(f\"Your monthly savings are ${monthly_savings:.2f}.\")\nprint(f\"Projected savings after one year, with interest, is: ${projected_savings:.2f}.\")\n# Note: The interest rate is assumed to be 5% for this calculation.",
+        "detail": "python_introduction.finance_calculator",
+        "documentation": {}
+    },
+    {
+        "label": "current_age",
+        "kind": 5,
+        "importPath": "python_introduction.future_age_calculator",
+        "description": "python_introduction.future_age_calculator",
+        "peekOfCode": "current_age = int(input(\"How old are you? \"))\n# We know 2050 is 27 years after 2023\nfuture_age = current_age + 27\n# Show the result\nprint(f\"In 2050, you will be {future_age} years old.\")",
+        "detail": "python_introduction.future_age_calculator",
+        "documentation": {}
+    },
+    {
+        "label": "future_age",
+        "kind": 5,
+        "importPath": "python_introduction.future_age_calculator",
+        "description": "python_introduction.future_age_calculator",
+        "peekOfCode": "future_age = current_age + 27\n# Show the result\nprint(f\"In 2050, you will be {future_age} years old.\")",
+        "detail": "python_introduction.future_age_calculator",
+        "documentation": {}
+    },
+    {
+        "label": "hours",
+        "kind": 5,
+        "importPath": "python_introduction.hours_to_seconds",
+        "description": "python_introduction.hours_to_seconds",
+        "peekOfCode": "hours = 2\n# Converting hours to seconds\nseconds = hours * 3600\nprint(\"2 hours(s) is\", seconds)  \n# This script declares a variable for hours, converts it to seconds by multiplying by 3600, and prints the result.",
+        "detail": "python_introduction.hours_to_seconds",
+        "documentation": {}
+    },
+    {
+        "label": "seconds",
+        "kind": 5,
+        "importPath": "python_introduction.hours_to_seconds",
+        "description": "python_introduction.hours_to_seconds",
+        "peekOfCode": "seconds = hours * 3600\nprint(\"2 hours(s) is\", seconds)  \n# This script declares a variable for hours, converts it to seconds by multiplying by 3600, and prints the result.",
+        "detail": "python_introduction.hours_to_seconds",
+        "documentation": {}
+    },
+    {
+        "label": "length",
+        "kind": 5,
+        "importPath": "python_introduction.rectangle_area",
+        "description": "python_introduction.rectangle_area",
+        "peekOfCode": "length = 10\nwidth = 5\n# calculating the area\narea = length * width\nprint(\"The area of the rectangle is:\", area)",
+        "detail": "python_introduction.rectangle_area",
+        "documentation": {}
+    },
+    {
+        "label": "width",
+        "kind": 5,
+        "importPath": "python_introduction.rectangle_area",
+        "description": "python_introduction.rectangle_area",
+        "peekOfCode": "width = 5\n# calculating the area\narea = length * width\nprint(\"The area of the rectangle is:\", area)",
+        "detail": "python_introduction.rectangle_area",
+        "documentation": {}
+    },
+    {
+        "label": "area",
+        "kind": 5,
+        "importPath": "python_introduction.rectangle_area",
+        "description": "python_introduction.rectangle_area",
+        "peekOfCode": "area = length * width\nprint(\"The area of the rectangle is:\", area)",
+        "detail": "python_introduction.rectangle_area",
+        "documentation": {}
+    },
+    {
+        "label": "principal",
+        "kind": 5,
+        "importPath": "python_introduction.simple_interest",
+        "description": "python_introduction.simple_interest",
+        "peekOfCode": "principal = 1000\nrate = 0.05\ntime = 3\ninterest = principal * rate * time\nprint(\"The simple interest is:\", interest)",
+        "detail": "python_introduction.simple_interest",
+        "documentation": {}
+    },
+    {
+        "label": "rate",
+        "kind": 5,
+        "importPath": "python_introduction.simple_interest",
+        "description": "python_introduction.simple_interest",
+        "peekOfCode": "rate = 0.05\ntime = 3\ninterest = principal * rate * time\nprint(\"The simple interest is:\", interest)",
+        "detail": "python_introduction.simple_interest",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 5,
+        "importPath": "python_introduction.simple_interest",
+        "description": "python_introduction.simple_interest",
+        "peekOfCode": "time = 3\ninterest = principal * rate * time\nprint(\"The simple interest is:\", interest)",
+        "detail": "python_introduction.simple_interest",
+        "documentation": {}
+    },
+    {
+        "label": "interest",
+        "kind": 5,
+        "importPath": "python_introduction.simple_interest",
+        "description": "python_introduction.simple_interest",
+        "peekOfCode": "interest = principal * rate * time\nprint(\"The simple interest is:\", interest)",
+        "detail": "python_introduction.simple_interest",
+        "documentation": {}
+    },
+    {
+        "label": "check_odd_even",
+        "kind": 2,
+        "importPath": "python_training.trial1",
+        "description": "python_training.trial1",
+        "peekOfCode": "def check_odd_even(number):\n    if number % 2 == 0:\n        return \"Even\"\n    else:\n        return \"Odd\"",
+        "detail": "python_training.trial1",
+        "documentation": {}
+    }
+]
