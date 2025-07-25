@@ -21,16 +21,21 @@ def main():
 
     while True:
         display_menu()  # Show options
-        choice = input("Enter your choice: ").strip()
+        try:
+            # Prompt for a numeric choice between 1 and 4
+            choice = int(input("Enter your choice (1-4): "))
+        except ValueError:
+            print("Invalid choice. Please enter a number between 1 and 4.")
+            continue
 
-        if choice == '1':
-            # Prompt for and add an item
+        if choice == 1:
+            # Add an item
             item = input("Enter an item to add: ").strip()
             shopping_list.append(item)
             print(f"Added '{item}' to the shopping list.")
 
-        elif choice == '2':
-            # Prompt for and remove an item
+        elif choice == 2:
+            # Remove an item
             item = input("Enter an item to remove: ").strip()
             if item in shopping_list:
                 shopping_list.remove(item)
@@ -38,8 +43,8 @@ def main():
             else:
                 print(f"Item '{item}' not found in the shopping list.")
 
-        elif choice == '3':
-            # Display the shopping list
+        elif choice == 3:
+            # View the current list
             if shopping_list:
                 print("Current shopping list:")
                 for index, entry in enumerate(shopping_list, start=1):
@@ -47,14 +52,14 @@ def main():
             else:
                 print("The shopping list is currently empty.")
 
-        elif choice == '4':
+        elif choice == 4:
             # Exit the program
             print("Goodbye!")
             break
 
         else:
-            # Handle invalid menu options
-            print("Invalid choice. Please try again.")
+            # Handle out-of-range numeric choices
+            print("Invalid choice. Please enter a number between 1 and 4.")
 
 
 if __name__ == "__main__":
