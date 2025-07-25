@@ -23,20 +23,20 @@ def main():
         display_menu()  # Show options
         try:
             # Prompt for a numeric choice between 1 and 4
-            choice = int(input("Enter your choice (1-4): "))
+            choice = int(input("Enter your choice: "))
         except ValueError:
             print("Invalid choice. Please enter a number between 1 and 4.")
             continue
 
         if choice == 1:
-            # Add an item
-            item = input("Enter an item to add: ").strip()
+            # Prompt for and add an item
+            item = input("Enter the item to add: ").strip()
             shopping_list.append(item)
             print(f"Added '{item}' to the shopping list.")
 
         elif choice == 2:
-            # Remove an item
-            item = input("Enter an item to remove: ").strip()
+            # Prompt for and remove an item
+            item = input("Enter the item to remove: ").strip()
             if item in shopping_list:
                 shopping_list.remove(item)
                 print(f"Removed '{item}' from the shopping list.")
@@ -44,7 +44,7 @@ def main():
                 print(f"Item '{item}' not found in the shopping list.")
 
         elif choice == 3:
-            # View the current list
+            # Display the shopping list
             if shopping_list:
                 print("Current shopping list:")
                 for index, entry in enumerate(shopping_list, start=1):
