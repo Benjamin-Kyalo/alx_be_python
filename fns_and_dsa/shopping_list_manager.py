@@ -1,57 +1,61 @@
-# A shopping list manager for dynamic storage
+# shopping_list_manager.py
+# A simple shopping list manager using Python lists for dynamic data storage.
 
 def display_menu():
-    # Show the main options to the user
-    print("\nShopping List Manager")
-    print("1. Add item to list")
-    print("2. Remove item from list")
-    print("3. Display list")
+    """
+    Display the main menu options to the user.
+    """
+    print("Shopping List Manager")
+    print("1. Add Item")
+    print("2. Remove Item")
+    print("3. View List")
     print("4. Exit")
 
-def main():
-    # Start with an empty list
-    shopping_list = []
 
-    # Keep running until the user chooses to exit
+def main():
+    """
+    Main function that runs the shopping list manager loop.
+    Initializes an empty shopping list and handles user input.
+    """
+    shopping_list = []  # Start with an empty list
+
     while True:
-        display_menu()
-        choice = input("Enter your choice (1-4): ").strip()
+        display_menu()  # Show options
+        choice = input("Enter your choice: ").strip()
 
         if choice == '1':
-            # Option 1: Add a new item
-            item = input("Enter item to add: ").strip()
+            # Prompt for and add an item
+            item = input("Enter an item to add: ").strip()
             shopping_list.append(item)
-            print(f"✅ Item '{item}' added to the list.")
+            print(f"Added '{item}' to the shopping list.")
 
         elif choice == '2':
-            # Option 2: Remove an existing item
-            item = input("Enter item to remove: ").strip()
+            # Prompt for and remove an item
+            item = input("Enter an item to remove: ").strip()
             if item in shopping_list:
                 shopping_list.remove(item)
-                print(f"🗑 Removed '{item}' from the list.")
+                print(f"Removed '{item}' from the shopping list.")
             else:
-                # Item wasn't found in the list
-                print(f"⚠️ Item '{item}' not found in your shopping list.")
+                print(f"Item '{item}' not found in the shopping list.")
 
         elif choice == '3':
-            # Option 3: Show all items
+            # Display the shopping list
             if shopping_list:
-                print("\n🛒 Your current shopping list:")
+                print("Current shopping list:")
                 for index, entry in enumerate(shopping_list, start=1):
-                    print(f"  {index}. {entry}")
+                    print(f"{index}. {entry}")
             else:
-                # List is empty
-                print("\nℹ️ Your shopping list is empty.")
+                print("The shopping list is currently empty.")
 
         elif choice == '4':
-            # Option 4: Exit the program
-            print("👋 Exiting the shopping list manager. Goodbye!")
+            # Exit the program
+            print("Goodbye!")
             break
 
         else:
-            # User entered something other than 1–4
-            print("❌ Invalid choice. Please enter a number between 1 and 4.")
+            # Handle invalid menu options
+            print("Invalid choice. Please try again.")
 
-# Only run main() when this script is executed directly (not imported)
+
 if __name__ == "__main__":
-    main()
+    main()  # Run the program when executed directly
